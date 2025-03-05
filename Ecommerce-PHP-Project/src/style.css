@@ -1,0 +1,668 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.header-container {
+    width: 100%;
+    height: 15vh;
+    background-color: #1f2327;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+.logo-container img {
+    width: 100%;
+    height: 15vh;
+    margin-left: 30px;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+
+}
+nav {
+
+    width: 65%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    right: 100px;
+
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #a58e7c;
+
+}
+nav a:hover {
+    scale: 1.1;
+    color: #E8F0FE;
+}
+span{
+    color:#f21b3f;
+}
+.logout{
+    padding: 7px 30px;
+    background-color: #f21b3f;
+    color: white;
+    border: none;
+    margin-left: 80px;
+
+}
+.logout:hover {
+    opacity: 0.7;
+}
+.first-container {
+    width: 100%;
+    height: 87vh;
+    background-image: url("images/mans-background-img.webp");
+    background-size: cover;
+    margin-top: 0;
+}
+.first-container:hover h1{
+    animation-name: h1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.first-container:hover h3{
+    animation-name: h1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.first-container:hover h2{
+    animation-name: h2;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+.text-section {
+    width: 60%;
+    height: 20vh;
+    position: relative;
+    top: 300px;
+    left: 30px;
+}
+.text-section h1 {
+    font-size: 2.5rem;
+    color: #a58e7c;
+    margin: 5px;
+   
+}
+@keyframes h1 {
+    0%{transform: translateX(-400px);}
+}
+@keyframes h2 {
+    0%{transform: translateX(400px);}
+}
+.text-section h2 {
+    font-size: 5rem;
+    color: #999;
+    margin: 0;
+}
+.text-section h3 {
+    font-size: 1.5rem;
+    color: #999;
+    margin: 0;
+    font-family: Playfair Display,serif;
+    font-style: italic;
+
+}
+.second-section {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.second-section:hover .img-1{
+    animation-name: h1;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+.second-section:hover .img-2{
+    animation-name: h1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.img-1 {
+    width: 24%;
+    height: 37vh;
+    background-image: url("images/shose-1.jpg");
+    background-size: cover;
+
+}
+.img-2 {
+    width: 24%;
+    height: 37vh;
+    background-image: url("images/mans-shose-1.jpg");
+    background-size: cover;
+    background-position: top;
+
+}
+.img-3 {
+    width: 24%;
+    height: 37vh;
+    background-image: url("images/quality-womens.jpg");
+    background-size: cover;
+}
+.second-section:hover .img-3{
+    animation-name: right;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.second-section:hover .img-4{
+    animation-name: right;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+
+.img-4 {
+    width: 24%;
+    height: 37vh;
+    background-image: url("images/jorden-1.jpg");
+    background-size: cover;
+}
+@keyframes right {
+    0%{transform: translate(400px);}
+    100%{transform: translate();}
+}
+.img-1:hover{
+    background-image: url("images/shose-1.jpg");
+    background-size: cover;
+}
+.img-2:hover{
+    background-image: url("images/mans-shose-1.jpg");
+    background-size: cover;
+}
+.img-3:hover{
+    background-image: url("images/quality-womens.jpg");
+}
+.img-4:hover{
+    background-image: url("images/jorden-1.jpg");
+}
+
+.fourth-section {
+    width: 100%;
+    height: 70vh;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.both-container {
+    width: 75%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translate,3s;
+}
+.photo-part {
+    width: 45%;
+    height: 47vh;
+    background-image: url("images/ourshop-img.jpg");
+    background-size: cover;
+    border: 10px solid white;
+
+
+}
+.both-container:hover .photo-part{
+
+}
+.both-container:hover .text-part{
+
+}
+.photo-part:hover {
+    scale: 1.1;
+}
+.both-container:hover .photo-part{
+    animation-name: h1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.both-container:hover .text-part{
+    animation-name: right;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.text-part {
+    width: 55%;
+    height: 47vh;
+    padding-left: 60px;
+    padding-top: 40px;
+
+
+}
+.text-part:hover {
+    scale: 1.1;
+}
+h4 {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .028em;
+    color: #999;
+    margin: 0;
+
+}
+h5 {
+    text-transform: uppercase;
+    font-size: 46px;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: .028em;
+    line-height: 60px;
+    line-height: 1.30435em;
+    color: #a58e7c;
+    margin: 0;
+
+}
+p {
+    font-size: 16px;
+    font-size: 1.14286em;
+    font-family: Playfair Display,serif;
+    font-style: italic;
+    line-height: 25px;
+    line-height: 1.5625em;
+    letter-spacing: .028em;
+    color: #9d9d9d;
+    position: relative;
+    margin: 0;
+}
+.promotion-part-1 {
+    width: 80%;
+    height: 70vh;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.adv-1 {
+    width: 22%;
+    height: 70vh;
+}
+.order-cart {
+    width: 220px;
+    height: 50px;
+    background-color: #a58e7c;
+    border: 3px solid #a58e7c;
+    color: #fff;
+    position: absolute;
+    left: 25px;
+    top: 300px;
+    opacity: 0;
+
+}
+.promotion-part-1:hover .pic-1{
+    animation-name: h1;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+.promotion-part-1:hover .pic-2{
+    animation-name: h1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.promotion-part-1:hover .pic-3{
+    animation-name: right;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.promotion-part-1:hover .pic-4{
+    animation-name: right;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+.promotion-part-2:hover .pic-1-1{
+    animation-name: h1;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+.promotion-part-2:hover .pic-2-2{
+    animation-name: h1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.promotion-part-2:hover .pic-3-3{
+    animation-name: right;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.promotion-part-2:hover .pic-4-4{
+    animation-name: right;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+.order-cart:hover {
+    background-color: white;
+    color: #a58e7c;
+
+}
+
+.pic-1:hover .order-cart {
+    opacity: 1 ;
+    z-index: 40;
+    display: block;
+}
+.pic-2:hover .order-cart {
+    opacity: 1 ;
+    z-index: 40;
+    display: block;
+}
+.pic-3:hover .order-cart {
+    opacity: 1 ;
+    z-index: 40;
+    display: block;
+}
+.pic-4:hover .order-cart {
+    opacity: 1 ;
+    z-index: 40;
+    display: block;
+}
+.pic-1-1:hover .order-cart {
+    opacity: 1 ;
+    z-index: 40;
+    display: block;
+}
+.pic-2-2:hover .order-cart {
+    opacity: 1 ;
+    z-index: 40;
+    display: block;
+}
+.pic-3-3:hover .order-cart {
+    opacity: 1 ;
+    z-index: 40;
+    display: block;
+}
+.pic-4-4:hover .order-cart {
+    opacity: 1 ;
+    z-index: 40;
+    display: block;
+}
+
+.adv-2 {
+    width: 22%;
+    height: 70vh;
+}
+.adv-3 {
+    width: 22%;
+    height: 70vh;
+}
+.adv-4 {
+    width: 22%;
+    height: 70vh;
+
+}
+.pic-1 {
+    width: 100%;
+    height: 50vh;
+    background-image: url("images/man-1.jpg");
+    background-size: cover;
+}
+.pic-1:hover {
+
+}
+.pic-2:hover {
+    background-image: url("images/man-2.jpg");
+    background-size: cover;
+}
+.pic-3:hover {
+    background-image: url("images/man-3.jpg");
+}
+.pic-4:hover {
+    background-image: url("images/man-4.jpg");
+}
+.pic-1-1:hover {
+
+}
+.pic-2-2:hover {
+
+}
+.pic-3-3:hover {
+
+    background-image: url("images/old-school.jpg");
+    background-size: cover;
+    background-position: left;
+
+}
+.pic-4-4:hover {
+    background-image: url("images/photo-2.2.jpg");
+    background-size: cover;
+
+}
+.text-1 {
+    width: 100%;
+    height: 20vh;
+}
+.pic-2 {
+    width: 100%;
+    height: 50vh;
+    background-image: url("images/man-2.jpg");
+    background-size: cover;
+
+}
+.text-2 {
+    width: 100%;
+    height: 20vh;
+}
+.pic-3 {
+    width: 100%;
+    height: 50vh;
+    background-image: url("images/man-3.jpg");
+    background-size: cover;
+
+}
+.text-3 {
+    width: 100%;
+    height: 20vh;
+}
+.pic-4 {
+    width: 100%;
+    height: 50vh;
+    background-image: url("images/man-4.jpg");
+    background-size: cover;
+
+}
+.text-4 {
+    width: 100%;
+    height: 20vh;
+}
+.item-name {
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #4d4d4d;
+    margin: 10px 0 0 0;
+}
+.item-price {
+    font-size: 24px;
+    font-size: 1.71429em;
+    color: #a58e7c;
+    margin: 10px 0;
+}
+.delete-price {
+    font-size: 1.29em;
+    color: #9d9d9d;
+    margin: 0;
+}
+.promotion-part-2 {
+    width: 80%;
+    height: 70vh;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pic-1-1 {
+    width: 100%;
+    height: 50vh;
+    background-image: url("images/women-1.jpg");
+    background-size: cover;
+
+}
+.pic-2-2 {
+    width: 100%;
+    height: 50vh;
+    background-image: url("images/women-2.jpg");
+    background-size: cover;
+
+}
+.pic-3-3 {
+    width: 100%;
+    height: 50vh;
+    background-image: url("images/old-school.jpg");
+    background-size: cover;
+
+}
+.pic-4-4 {
+    width: 100%;
+    height: 50vh;
+    background-image: url("images/photo-2.2.jpg");
+    background-size: cover;
+
+}
+.catagory-part {
+    width: 70%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 200px auto;
+    text-align: center;
+    border-top: 0.2px solid silver;
+    border-bottom: 0.2px solid silver;
+}
+.catagory-part:hover .catagory-1{
+    animation-name: h1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.catagory-part:hover .catagory-3{
+    animation-name: right;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.all-catagory {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.all-catagory a h6:hover {
+    scale: 1.1;
+    color: #a58e7c;
+}
+.catagory-1 {
+    padding-right: 70px;
+    height: 20vh;
+    border-right: 0.2px solid silver;
+}
+.catagory-2 {
+    padding-right: 70px;
+    height: 20vh;
+    border-right: 0.2px solid silver;
+}
+.catagory-3 {
+
+    height: 20vh;
+
+}
+footer {
+    width: 100%;
+    height: 55vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-size: auto 100%;
+    background-position: 50%;
+    text-align: center;
+    color: #9d9d9d;
+    background-image: url("images/footer-image.jpg");
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.inner-div {
+    width: 100%;
+    height: 55vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.inner-top {
+    width: 90%;
+    height: 35vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.inner-top div {
+    width: 25%;
+    height: 25vh;
+
+}
+.inner-bottom {
+    width: 25%;
+    height: 20vh;    
+}
+.link {
+    text-decoration: none;
+    color: white;
+    
+}
+.link:hover {
+    color: #a58e7c;
+    
+}
+.social-media-container {
+    width: 60%;
+    height: 10vh;
+    margin: 0 auto;
+    border-bottom:0.2px solid #999;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.copy-text {
+    font-size: 1.1em;
+    color: #9d9d9d;
+    margin-bottom: 0;
+}
+.payment div {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.payment div img {
+    width: 60px;
+    height: 40px;
+}
+.payment div img:hover{
+    scale: 1.1;
+}
+
+.social-media-container img {
+    width: 30px;
+    height: 30px;
+}
+.social-media-container img:hover{
+    scale: 1.2;
+}

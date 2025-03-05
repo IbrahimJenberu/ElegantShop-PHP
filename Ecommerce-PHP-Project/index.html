@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+.thered-section {
+    width: 75%;
+    height: 90vh;
+    margin: 100px auto;
+    display: flex;
+    /* justify-content: space-evenly; */
+    border: 1px solid red;
+}
+
+.left-part {
+
+    width: 35%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-img {
+    width: 100%; 
+    background-image: url("images/left-perfect.avif");
+    background-size: cover;
+}
+.bottom-img {
+    width: 100%;   
+    background-image: url("images/bottom-sample.avif");
+    background-size: cover;
+}
+.right-container{
+ 
+      width: 65%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+}
+.top-part {
+    display: flex;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;  
+}
+.left-img {
+    width: 46.5%;  
+    background-image: url("images/open-img.avif");
+    background-size: cover;
+
+}
+.right-img {
+    background-image: url("images/top-right-perfect.avif");
+    background-size: cover;
+}
+.bottom-part {
+   height: 50%;
+   width: 100%;
+    background-image: url("images/updated-bottom.jpg");
+    background-size: cover;
+    
+}
+
+.text-part {
+    width: 55%;
+    height: 47vh;
+    padding-left: 60px;
+    padding-top: 40px;
+}
+.text-part:hover {
+    scale: 1.1;
+}
+h4 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: .028em;
+    color: #999;
+    margin: 0;
+
+}
+h5 {
+    text-transform: uppercase;
+    font-size: 46px;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: .028em;
+    line-height: 60px;
+    line-height: 1.30435em;
+    color: #a58e7c;
+    margin: 0;
+
+}
+p {
+    font-size: 16px;
+    font-size: 1.14286em;
+    font-family: Playfair Display,serif;
+    font-style: italic;
+    line-height: 25px;
+    line-height: 1.5625em;
+    letter-spacing: .028em;
+    color: #9d9d9d;
+    position: relative;
+    margin: 0;
+}
+  </style>
+</head>
+<body>
+  <header class="header-container">
+      <div class="logo-container">
+        <img src="images/perfect-logo.png" alt="">
+
+      </div>
+      <nav>
+        <a href="index.html"><span>*</span>HOME</a>
+        <a href="customerPage.php"><span>*</span>CATEGORIES</a>   
+        <a href="login_page.php"><span>*</span>LOGIN</a>
+        <a href="feedback.php"><span>*</span>CONTACT</a>
+        <form action="adminPage.php" method="post">
+          <button name="logout" class="logout">Log out</button>
+          </form>
+      </nav>
+  </header>
+  <section class="first-container">
+    <div class="text-section">
+      <h1>Our shop Special</h1>
+      <h2>FIND YOUR STYLE</h2>
+      <h3>50 classic looks for summer</h3>
+
+    </div>
+
+
+  </section>
+  <section class="second-section">
+
+    <div class="img-1">
+
+    </div>
+    <div class="img-2">
+
+    </div>
+    <div class="img-3">
+
+    </div>
+    <div class="img-4">
+
+    </div>
+
+  </section>
+  <section class="thered-section">
+    <div class="left-part">
+
+        <div class="top-img"></div>
+        <div class="bottom-img"></div>
+
+    </div>
+
+    <div class="right-container">
+
+        <div class="top-part">
+          <div class="left-img"></div>
+          <div class="right-img"></div>
+
+        </div>
+
+        <div class="bottom-part">
+
+        </div>
+
+    </div>
+
+  </section>
+  <section class="fourth-section">
+    <div class="both-container">
+      <div class="photo-part">
+
+      </div>
+      <div class="text-part">
+        <h4>WE'RE HIPSTER AGENCY</h4>
+        <h5>OVER 10 YEARS OF FASHION HISTORY.</h5>
+        <p>We design and create beutiful clothing that can be worn time and time again , 
+           So that you can live a sustainable and fashionable life style. we allways think
+           about the enviromental impact of our processes, actively using materials and 
+           methods which are freindly to the enviroment at evry opportunity. 
+           </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="promotion-part-1">
+
+    <div class="adv-1">
+
+
+      <div class="pic-1">
+        <!-- <input type="submit" class="order-cart" value="ADD TO CART"> -->
+
+      </div>
+      <div class="text-1">
+        <h6 class="item-name">GUCCI</h6>
+        <h6 class="item-price">ETB 1250.00</h6>
+        <h6 class="delete-price"><del>ETB 1500.00</del></h6>
+  
+      </div>
+
+    </div>
+    <div class="adv-2">
+ 
+      <div class="pic-2">
+        <!-- <input type="submit" class="order-cart" value="ADD TO CART"> -->
+
+      </div>
+      <div class="text-1">
+        <h6 class="item-name">ADIDAS</h6>
+        <h6 class="item-price">ETB 1250.00</h6>
+        <h6 class="delete-price"><del>ETB 1500.00</del></h6>
+  
+      </div>
+
+    </div>
+    <div class="adv-3">
+      <div class="pic-3">
+        <!-- <input type="submit" class="order-cart" value="ADD TO CART"> -->
+
+      </div>
+      <div class="text-1">
+        <h6 class="item-name">PUMA</h6>
+        <h6 class="item-price">ETB 1250.00</h6>
+        <h6 class="delete-price"><del>ETB 1500.00</del></h6>
+  
+      </div>
+      </div>
+    <div class="adv-4">
+      <div class="pic-4">
+        <!-- <input type="submit" class="order-cart" value="ADD TO CART"> -->
+
+      </div>
+      <div class="text-1">
+        <h6 class="item-name">NIKE</h6>
+        <h6 class="item-price">ETB 1250.00</h6>
+        <h6 class="delete-price"><del>ETB 1500.00</del></h6>
+  
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="promotion-part-2">
+    <div class="adv-1">
+      <div class="pic-1-1">
+        <!-- <input type="submit" class="order-cart" value="ADD TO CART"> -->
+
+      </div>
+      <div class="text-1">
+        <h6 class="item-name">XAMA</h6>
+        <h6 class="item-price">ETB 1250.00</h6>
+        <h6 class="delete-price"><del>ETB 1500.00</del></h6>
+  
+      </div>
+
+    </div>
+    <div class="adv-2">
+ 
+      <div class="pic-2-2">
+        <!-- <input type="submit" class="order-cart" value="ADD TO CART"> -->
+
+      </div>
+      <div class="text-1">
+        <h6 class="item-name">MISSKARINA</h6>
+        <h6 class="item-price">ETB 1250.00</h6>
+        <h6 class="delete-price"><del>ETB 1500.00</del></h6>
+  
+      </div>
+
+    </div>
+    <div class="adv-3">
+      <div class="pic-3-3">
+        <!-- <input type="submit" class="order-cart" value="ADD TO CART"> -->
+
+      </div>
+      <div class="text-1">
+        <h6 class="item-name">OLD SCHOOL</h6>
+        <h6 class="item-price">ETB 1250.00</h6>
+        <h6 class="delete-price"><del>ETB 1500.00</del></h6>
+  
+      </div>
+      </div>
+    <div class="adv-4">
+      <div class="pic-4-4">
+        <!-- <input type="submit" class="order-cart" value="ADD TO CART"> -->
+
+      </div>
+      <div class="text-1">
+        <h6 class="item-name">GUCCI</h6>
+        <h6 class="item-price">ETB 1250.00</h6>
+        <h6 class="delete-price"><del>ETB 1500.00</del></h6>
+  
+      </div>
+
+    </div>
+
+  </section>
+  <section class="catagory-part">
+    <div class="all-catagory">
+      <div class="catagory-1">
+        <img src="images/male-icon.jpg" alt="">
+      <a href="customerPage.php"><h6 class="item-name">MANS CATEGORY</h6></a>
+
+
+      </div>
+      <div class="catagory-2">
+        <img src="images/female-icon.jpg" alt="">
+        <a href="customerPage.php"><h6 class="item-name">WOMENS CATEGORY</h6></a>
+
+      </div>
+      <div class="catagory-3">
+        <img src="images/children-icon.jpg" alt="">
+        <a href="customerPage.php"><h6 class="item-name">CHILDREN CATEGORY</h6></a>
+
+      </div>
+
+    </div>
+
+  </section>
+  <footer>
+    <div class="inner-div">
+      <div class="inner-top">
+        <div class="adress">
+          <h6 class="item-price">ADDRESS</h6>
+          <h6 class="delete-price">Sikela, Nigid Bank Bestejerba</h6><br>
+            <p><a class="link" href="tel">Phone: +251917577381</a></p>
+            <p><a class="link" href="gmail.com">Email: ebrahim@gmail.com</a></p>
+
+        </div>
+        <div class="service">
+          <h6 class="item-price">OUR SERVICES</h6>
+          <h6 class="delete-price">Order History<br>
+            Return</h6>
+
+        </div>
+        <div class="payment">
+          <h6 class="item-price">PAYMENTS</h6>
+          <h6 class="delete-price">Secured Payment</h6>
+          <div class="payment-container">
+            <a href=""><img src="images/CBE-img.jpg" alt=""></a>
+            <a href=""><img src="images/amole-img.jpg" alt=""></a>
+            <a href=""><img src="images/telebirr-img.png" alt=""></a>
+            <a href=""><img src="images/apolo-img.jpg" alt=""></a>
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="inner-bottom">
+        <div class="social-media-container">
+          <a href="www.facebook.com"><img src="images/facebook-icon.png" alt=""></a>
+          <a href="www.twitter.com"><img src="images/twitter-icon.png" alt=""></a>
+          <a href="pinterest.com"><img src="images/pintrest-icon.png" alt=""></a>
+          <a href="www.instagram.com"><img src="images/instagram-icon.png" alt=""></a>
+
+        </div>
+        <div class="copy-container">
+          <h6 class="copy-text">Copyright © 2023 - All Rights Reserved</h6>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+</body>
+</html>
