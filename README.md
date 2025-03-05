@@ -24,4 +24,11 @@
 
 ---
 
+## 📬 Contact
+📧 **Email:** ebrahimjenberu@example.com  
+🔗 **GitHub:** [IbrahimJenberu](https://github.com/IbrahimJenberu)  
+🔗 **LinkedIn:** [Ebrahim (Ibhan) Jenberu](https://www.linkedin.com/in/ebrahim-jenberu-4026822a2/)
 
+---
+
+⭐ **Don't forget to star the repo if you find it useful!** ⭐
