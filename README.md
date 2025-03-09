@@ -20,7 +20,7 @@
 - **HTML5 & CSS3** 🎨
 - **JavaScript** ✨
 - **Bootstrap** 💪 (for responsive design)
-- **Apache/Nginx** 🌍
+
 
 ---
 
