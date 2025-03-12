@@ -1,42 +1,58 @@
-
-
 <?php
+session_start(); // Start the session
+include "connect.php"; // Include the database connection file
 
-include "connect.php";
-
-
-if(!(isset($_SESSION["username"])&&(($_SESSION["role"]=="admin")))){
-
-    header("Location: login_page.php"); 
-
- }
-
-
-
-$sql1="SELECT * FROM history2";
-$result=mysqli_query($con,$sql1);
-
-if(mysqli_num_rows($result)>0){
-
-
-        echo "<table style='margin:20px auto;width:70%;text-align:center' border='1' cellpadding='10' cellspacing='0'>
-        <tr><th>prod_id</th><th>username</th><th>full_name</th><th>phone</th><th>address</th><th>productName</th><th>quantity</th><th>price</th><th>product_size</th></tr>";
-    while ($row=mysqli_fetch_assoc($result)){
-       
-        echo "<tr><td>$row[id]</td>
-        <td>$row[username]</td>
-        <td>$row[full_name]</td>
-        <td>$row[phone]</td>
-        <td>$row[address]</td>
-        <td>$row[productName]</td>
-        <td>$row[quantity]</td>
-        <td>$row[price]</td>
-        <td>$row[product_size]</td>
-        </tr>";
-
-    }
-    echo "</table>";
-       
+// Redirect if the user is not logged in as an admin
+if (!(isset($_SESSION["username"]) && ($_SESSION["role"] == "admin"))) {
+    header("Location: login_page.php");
+    exit();
 }
 
+// Fetch transaction history from the database
+$sql = "SELECT * FROM history2";
+$result = mysqli_query($con, $sql);
+
+// Check if the query was successful
+if (!$result) {
+    die("Database query failed: " . mysqli_error($con));
+}
+
+// Check if there are any rows returned
+if (mysqli_num_rows($result) > 0) {
+    // Start the table and add headers
+    echo "<table class='transaction-table'>
+          <tr>
+              <th>Prod ID</th>
+              <th>Username</th>
+              <th>Full Name</th>
+              <th>Phone</th>
+              <th>Address</th>
+              <th>Product Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Product Size</th>
+          </tr>";
+
+    // Loop through each row and display the data
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo "<tr>
+              <td>" . htmlspecialchars($row['id']) . "</td>
+              <td>" . htmlspecialchars($row['username']) . "</td>
+              <td>" . htmlspecialchars($row['full_name']) . "</td>
+              <td>" . htmlspecialchars($row['phone']) . "</td>
+              <td>" . htmlspecialchars($row['address']) . "</td>
+              <td>" . htmlspecialchars($row['productName']) . "</td>
+              <td>" . htmlspecialchars($row['quantity']) . "</td>
+              <td>" . htmlspecialchars($row['price']) . "</td>
+              <td>" . htmlspecialchars($row['product_size']) . "</td>
+              </tr>";
+    }
+
+    echo "</table>"; // Close the table
+} else {
+    // Display a message if no records are found
+    echo "<p style='text-align: center; color: red;'>No transaction history found.</p>";
+}
+
+mysqli_close($con); // Close the database connection
 ?>
