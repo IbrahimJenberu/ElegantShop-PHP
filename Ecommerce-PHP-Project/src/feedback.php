@@ -83,3 +83,75 @@ if (mysqli_num_rows($result) > 0) {
 
 mysqli_close($con); // Close the database connection
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History</title>
+    <style>
+        /* Table Styling */
+        .transaction-table {
+            margin: 20px auto;
+            width: 70%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .transaction-table th,
+        .transaction-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .transaction-table th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        .transaction-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .transaction-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Error Message Styling */
+        .error-message {
+            text-align: center;
+            color: red;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        /* Pagination Styling */
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .pagination a {
+            padding: 5px 10px;
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+
+        .pagination a:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Transaction History</h1>
+    <form method="post" style="text-align: center; margin-bottom: 20px;">
+        <input type="submit" name="export" value="Export to CSV">
+    </form>
+    <?php
+    // The PHP code above will render the table or error message here
+    ?>
+</body>
+</html>
